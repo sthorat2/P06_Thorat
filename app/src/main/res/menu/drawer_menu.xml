@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_bonsai"
+            android:icon="@drawable/tree"
+            android:title="Bonsai" />
+        <item
+            android:id="@+id/nav_cactus"
+            android:icon="@drawable/cactus"
+            android:title="Cactus" />
+        <item
+            android:id="@+id/nav_succulent"
+            android:icon="@drawable/suc"
+            android:title="Succulent" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_location"
+                android:icon="@drawable/my_location"
+                android:title="location" />
+
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/contact_phone"
+                android:title="contact_us" />
+        </menu>
+    </item>
+
+</menu>

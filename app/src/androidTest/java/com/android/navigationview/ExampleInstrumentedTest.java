@@ -1,4 +1,4 @@
-package com.android.quiz;
+package com.android.navigationview;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.android.quiz", appContext.getPackageName());
+        assertEquals("com.android.navigationview", appContext.getPackageName());
     }
 }

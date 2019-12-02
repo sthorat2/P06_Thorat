@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">Quiz</string>
+    <string name="app_name">NavigationView</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>;
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="action_settings">Settings</string>
+
+
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="title_activity_bonsai">bonsai</string>
+    <string name="bonsai">Bonsai</string>
+    <string name="cactus">Cactus</string>
+    <string name="succulent">Succulents</string>
+    <string name="contact">Contact Us</string>
 </resources>
+
