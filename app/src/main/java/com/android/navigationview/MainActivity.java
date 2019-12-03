@@ -69,8 +69,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.nav_location:
-                Toast.makeText(this,"Location",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this,"Location",Toast.LENGTH_SHORT).show();
+
+                Intent n = new Intent(MainActivity.this,Location_act.class);
+                startActivity(n);
                 break;
+
             case R.id.nav_contact_us:
                 Intent m = new Intent(MainActivity.this,contact.class);
                 startActivity(m);

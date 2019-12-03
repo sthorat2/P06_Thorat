@@ -20,6 +20,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
     Button cac;
     Button succ;
     Button cont;
+    Button loc;
 
     @Nullable
     @Override
@@ -32,11 +33,15 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
         Button bonsai =(Button) rootView.findViewById(R.id.button1);
         Button cac =(Button) rootView.findViewById(R.id.button2);
         Button succ =(Button) rootView.findViewById(R.id.button3);
-        Button cont =(Button)rootView.findViewById(R.id.button4) ;
+        Button loc =(Button)rootView.findViewById(R.id.button4) ;
+        Button cont =(Button)rootView.findViewById(R.id.button5) ;
+
 
         bonsai.setOnClickListener(this);
         cac.setOnClickListener(this);
         succ.setOnClickListener(this);
+        loc.setOnClickListener(this);
+        cont.setOnClickListener(this);
 
 
         return rootView;
@@ -70,8 +75,14 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
 
             case R.id.button4:
 
-                Intent l = new Intent(context, contact.class);
+                Intent l = new Intent(context, Location_act.class);
                 startActivity(l);
+                break;
+
+            case R.id.button5:
+
+                Intent m = new Intent(context, contact.class);
+                startActivity(m);
                 break;
 
 

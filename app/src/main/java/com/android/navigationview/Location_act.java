@@ -11,14 +11,14 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class location extends FragmentActivity implements OnMapReadyCallback {
+public class Location_act extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_location);
+        setContentView(R.layout.activity_location2);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -40,8 +40,15 @@ public class location extends FragmentActivity implements OnMapReadyCallback {
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng shop1 = new LatLng(42.108064, -75.937014);
+        mMap.addMarker(new MarkerOptions().position(shop1).title("Price Chopper Florist"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(shop1));
+
+
+        LatLng shop2 = new LatLng(42.104505, -75.932922);
+        mMap.addMarker(new MarkerOptions().position(shop2).title("Price Chopper Florist"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(shop2));
+
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(shop1,12.0f));
     }
 }
