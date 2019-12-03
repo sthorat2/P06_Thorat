@@ -3,6 +3,7 @@ package com.android.navigationview;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -44,13 +45,14 @@ public class contact extends AppCompatActivity {
         String subject = etSubject.getText().toString();
         String message = etMessage.getText().toString();
 
-        Intent intent =new Intent(Intent.ACTION_SEND);
-        intent.putExtra(Intent.EXTRA_EMAIL,email);
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + email ));
+
         intent.putExtra(Intent.EXTRA_SUBJECT,subject);
         intent.putExtra(Intent.EXTRA_TEXT,message);
+        startActivity(intent);
 
-        intent.setType("message/rfc822");
-        startActivity(Intent.createChooser(intent,"Choose an email client"));
+        /*intent.setType("message/rfc822");
+        startActivity(Intent.createChooser(intent,"Choose an email client"));*/
 
         }
 
